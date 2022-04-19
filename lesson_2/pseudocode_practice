@@ -1,0 +1,45 @@
+## a method that returns the sum of two integers
+
+Method:
+Given two integers,
+- perform addition between the first and second integer
+- the sum is implicitly returned by the method
+
+## a method that takes an array of strings, and returns a string that is all those strings concatenated together
+
+Method:
+Given one array of string elements,
+- initialize an empty string variable
+- Using the array class method #each, iterate over each string element in the array
+- for each iteration, use the '+' concatenation operator to append the string to the string variable initialized above.
+- following the completion of the #each method, explicitly return the string variable
+
+## a method that takes an array of integers, and returns a new array with every other element from the original array, starting with the first element
+
+Method:
+Given one array of integer elements,
+- initialize a counter variable to 1
+- initialize an empty array variable
+- Using the array class method #each, iterate over each string element in the array passed into the method
+- if the counter is even, skip this iteration
+- (otherwise) append that element to the array initialized above using the #push method
+- add one to counter
+
+
+## a method that determines the index of the 3rd occurrence of a given character in a string. For instance, if the given character is 'x' and the string is 'axbxcdxex', the method should return 6 (the index of the 3rd 'x'). If the given character does not occur at least 3 times, return nil.
+
+Method:
+Given a string and a character to look for in that string,
+- initialize counter A to 0
+- initialize index counter B to 0
+- using the string class method #each_char, iterate over each character in the string
+- for each iteration, if the character == the character we are looking for, add 1 to counter A.
+- if counter == 3, explicitly return the index counter, exiting the method.
+- (otherwise) add 1 to index counter B
+
+## a method that takes two arrays of numbers and returns the result of merging the arrays. The elements of the first array should become the elements at the even indexes of the returned array, while the elements of the second array should become the elements at the odd indexes.
+
+Method:
+Given two arrays of numbers of equal size,
+- get the size of the arrays
+- iterate over each element in array A, and insert it into every other index spot in array B using #insert
